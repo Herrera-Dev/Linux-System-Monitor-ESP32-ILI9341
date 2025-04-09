@@ -7,13 +7,13 @@ import re
 import glob
 con = serial.Serial()
 
-mac_esp32 = 'C0:49:EF:E5:4F:46' # SERIAL_NUMBER_ESP32
-portEsp32 = '/dev/rfcomm0'      # PUERTO_SERIAL
+mac_esp32 = 'XX:XX:XX:XX:XX:XX' # SERIAL_NUMBER_ESP32
+portEsp32 = '/dev/rfcomm0'      # SERIAL_PORT
 canal = 1
 
 def conectar_rfcomm():
-    os.system("rfcomm release 0")  # Libera el puerto rfcomm antes de vincular
-    resultado = os.system(f"rfcomm bind 0 {mac_esp32} {canal}")  # Vincula el dispositivo
+    resultado = os.system(f"sudo rfcomm bind 0 {mac_esp32} {canal}")  # Vincula el dispositivo
+    os.system("sudo rfcomm release 0")  # Libera el puerto rfcomm antes de vincular
     return resultado == 0
     # Terminal mostrar: sdptool browse C0:49:EF:E5:4F:46
 def newConexion():

@@ -39,6 +39,6 @@
 
 ## Problemas
 Al iniciar el sistema no se crea el puerto serial virtual `/dev/rfcomm0` automaticamente hay que iniciarlo manualmente como adm o hacer algun script para automatizarlo:
-`sudo rfcomm release 0`
 `sudo rfcomm bind 0 XX:XX:XX:XX:XX:XX 1`
+`sudo rfcomm release 0`
 Caso contrario el script no podra conectarse al bluetooth.

@@ -114,6 +114,8 @@ def free_Memory():
 
 #----------------
 newConexion()
+print("Enviando datos a ESP32...")
+
 while True:
     try:
         tiempo_actual = time.time()

@@ -13,9 +13,8 @@
 // #define NO_TOUCH      // usa NO_TOUCH cuando tu pantalla no tiene toque
 
 //------------------------------------------
-// Seleccionar modo BLUETOOTH o USB
+// Seleccionar modo BLUETOOTH o USB UART
 #define MODO_BLUETOOTH 0
-
 const int redrawtime = 10000; // Cambiar esto para que coincida con el script en el host
 const int tDesc = 300000;     // 5 min. Restablecer si no hay nuevos valores
 
@@ -49,11 +48,10 @@ int32_t hdd[21] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 int32_t gpu[21] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 int32_t procs[21] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
-// Otras variables
-int margin = 40;
 // Pantalla ILI9341 TFT
 int screenwidth = 320;
 int screenheight = 240;
+int margin = 40;
 
 boolean graphshowing = false;
 boolean homescreen = true;
