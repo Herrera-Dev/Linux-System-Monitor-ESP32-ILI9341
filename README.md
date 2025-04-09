@@ -1,4 +1,4 @@
-# Linux System Monitor - ESP32 and TFT ILI9341
+# Linux System Monitor - ESP32 and TFT-ILI9341
 
  ![alt text](/assets/imagen.jpg "ESP32 TFT")
  ![alt text](/assets/main_image.jpg "Bluetooth-System-Monitor")

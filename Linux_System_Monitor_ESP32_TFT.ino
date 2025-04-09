@@ -13,7 +13,7 @@
 // #define NO_TOUCH      // usa NO_TOUCH cuando tu pantalla no tiene toque
 
 //------------------------------------------
-// Seleccionar modo BLUETOOTH o USB
+// Seleccionar modo BLUETOOTH o USB UART
 #define MODO_BLUETOOTH 0
 
 const int redrawtime = 10000; // Cambiar esto para que coincida con el script en el host
